@@ -13,18 +13,19 @@ import style from "./SliderCatalog.module.css";
 export const SliderCatalog: React.FC = () => {
   const [filtersData, setFiltersData] = useState<DataStructureFilters[]>([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/filters")
-      .then(response => {
+    axios
+      .get("/api/filters")
+      .then((response) => {
         setFiltersData(response.data);
       })
-      .catch(error => {
-        console.error('Ошибка при получении данных о фильтрах:', error);
+      .catch((error) => {
+        console.error("Ошибка при получении данных о фильтрах:", error);
       });
   }, []);
 
-  const popularFilters = Array.isArray(filtersData) ? filtersData.filter(
-    (filter) => filter.isPopular
-  ) : [];
+  const popularFilters = Array.isArray(filtersData)
+    ? filtersData.filter((filter) => filter.isPopular)
+    : [];
 
   const settings = {
     dots: true,
