@@ -7,11 +7,14 @@ import { DataStructureCoils } from "../../../interface/DataStructureCoils";
 
 export const Wire = () => {
   const [wires, setWires] = useState<any[]>([]);
-  const [coils, setCoils] = useState<DataStructureCoils>({ diameter_coils: [], diameter_wire: [] });
+  const [coils, setCoils] = useState<DataStructureCoils>({
+    diameter_coils: [],
+    diameter_wire: [],
+  });
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/wires")
+      .get("/api/wires")
       .then((response) => {
         console.log("Ответ сервера:", response.data); // Добавлено логирование ответа
         // Проверка, что response.data является массивом
@@ -19,7 +22,10 @@ export const Wire = () => {
           setWires(response.data);
         } else {
           // Обработка случая, когда response.data не массив
-          console.error("Полученные данные не являются массивом:", response.data);
+          console.error(
+            "Полученные данные не являются массивом:",
+            response.data
+          );
         }
       })
       .catch((error) => {
@@ -27,9 +33,9 @@ export const Wire = () => {
       });
 
     axios
-      .get("http://localhost:5000/coils")
+      .get("/api/coils")
       .then((response) => {
-          setCoils(response.data);
+        setCoils(response.data);
       })
       .catch((error) => {
         console.error("Ошибка при получении данных о катушках:", error);

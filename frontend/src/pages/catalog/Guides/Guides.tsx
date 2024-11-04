@@ -9,7 +9,7 @@ export const Guides = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/guides")
+      .get("/api/guides")
       .then((response) => {
         // Предполагается, что ответ содержит массив направляющих в свойстве data
         setGuides(response.data);

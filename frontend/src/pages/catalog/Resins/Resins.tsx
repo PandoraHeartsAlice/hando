@@ -11,7 +11,7 @@ export const Resin = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/resins")
+      .get("/api/resins")
       .then((response) => {
         setResins(response.data);
       })

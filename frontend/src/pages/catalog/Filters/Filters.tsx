@@ -19,16 +19,16 @@ export const Filters: React.FC = () => {
 
   const [filtersData, setFiltersData] = useState<DataStructureFilters[]>([]);
   useEffect(() => {
-    axios.get("http://localhost:5000/filters")
-      .then(response => {
+    axios
+      .get("/api/filters")
+      .then((response) => {
         // Assuming the server response wraps the array in a `filters` property
         setFiltersData(response.data);
       })
-      .catch(error => {
-        console.error('Ошибка при получении данных о фильтрах:', error);
+      .catch((error) => {
+        console.error("Ошибка при получении данных о фильтрах:", error);
       });
   }, []);
-
 
   const [sizeRange, setSizeRange] = useState({
     width: [50, 300],
@@ -116,9 +116,7 @@ export const Filters: React.FC = () => {
   }, [filteredFilters]);
 
   const firms = Array.from(
-    new Set(
-      filtersData.map((filter: DataStructureFilters) => filter.firm)
-    )
+    new Set(filtersData.map((filter: DataStructureFilters) => filter.firm))
   );
 
   return (

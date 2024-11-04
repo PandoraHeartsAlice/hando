@@ -9,7 +9,7 @@ export const Brushes = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/brushes")
+      .get("/api/brushes")
       .then((response) => {
         // Предполагается, что ответ содержит массив кистей в свойстве data
         const formattedBrushes: DataStructureBrushes[] = response.data.map(

@@ -9,7 +9,7 @@ export const Nozzles = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/nozzles")
+      .get("/api/nozzles")
       .then((response) => {
         // Предполагается, что ответ содержит массив соплов в свойстве data
         setNozzles(response.data);
