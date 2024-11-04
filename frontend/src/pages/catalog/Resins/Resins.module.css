@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  margin-top: 25px;
+  align-items: stretch;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.cardContainer > *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.textContainer {
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  max-width: 600px; 
+  overflow-wrap: break-word;
+}
+
+.textContainer2 {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  overflow-wrap: break-word;
+}

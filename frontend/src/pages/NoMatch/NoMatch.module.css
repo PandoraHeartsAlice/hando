@@ -1,0 +1,33 @@
+/* NoMatch.module.css */
+.container {
+  display: flex;
+  flex-direction: column; /* Добавьте это свойство */
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.errorMessage {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.homeButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: var(--text-color-main);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.homeButton:hover {
+  background-color: #141414;
+}

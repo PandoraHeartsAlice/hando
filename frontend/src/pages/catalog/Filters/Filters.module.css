@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 1px;
+  align-content: flex-start;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  box-sizing: border-box;
+  margin-right: 32px;
+}
+
+.numbOfElement {
+  margin-bottom: 5px;
+}
+
+.textFirm {
+  margin-bottom: 10px;
+}
+
+.filters h2 {
+  margin-bottom: 20px;
+}
+
+.filters input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filters label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.filters input[type="checkbox"] {
+  margin-right: 7px;
+}
+
+.filters .displayedItemCount {
+  margin-bottom: 20px;
+}
+
+.sizeRangeSlider, .firmFilter {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.products {
+  flex: 1;
+  min-width: 0; 
+}

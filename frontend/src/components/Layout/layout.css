@@ -1,0 +1,60 @@
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 25px auto;
+  font-family: "InterRegular";
+  min-width: 600px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.header__ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+
+.header__li {
+
+} 
+
+.header__link {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s; 
+}
+
+.header__ul:first-child {
+  border-radius: 10px;
+}
+
+.header__link:hover {
+  background-color: #111;
+}
+
+.catalog__name {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.header__basket {
+  margin-left: auto;
+}

@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "InterRegular";
+  src: local("InterRegular"),
+   url("./fonts/Inter/Inter-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+:root {
+  --border-color: #dad8d8;
+  --background-light: #fafafa;
+  --background-dark: #e8e8e8;
+  --text-color-main: #363636;
+  --text-color-secondary: #999;
+  --price-color: #f00;
+  --font-family-main: "InterRegular";
+}

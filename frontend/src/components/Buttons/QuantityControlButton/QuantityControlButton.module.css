@@ -1,0 +1,50 @@
+/* QuantityControl.module.css */
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65px;
+  background-color: #252728;
+  border-radius: 15px;
+  padding: 4px;
+  box-shadow: 2px 2px 0 0 #9fa3a5;
+  margin-top: 2px;
+  font-family: "InterRegular";
+}
+
+.textDec {
+  margin-top: -2px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  font-size: 19px;
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: #313435; 
+  cursor: pointer;
+  border: none;
+  color: #f1f7f9;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #121213; 
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: -1px -1px 0 0 #9fa3a5;
+}
+
+.quantity {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "InterRegular";
+  color: #f1f7f9;
+}

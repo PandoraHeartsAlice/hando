@@ -1,0 +1,74 @@
+/* ResinCard.module.css */
+.card {
+  position: relative;
+  width: 220px;
+  height: 300px;
+  border: none;
+  box-shadow: 0 2px 7px #dfdfdf;
+  border: 1px solid #dad8d8;
+  background: #fafafa;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardName {
+  color: #363636;
+  margin-bottom: 10px;
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 125px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.priceAndButtonContainer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  height: 30px;
+}
+
+.buttonQuantityContainer {
+  margin-right: 3px;
+  margin-bottom: 2px;
+}
+
+.originalPrice {
+  font-size: 13px;
+  text-decoration: line-through;
+  color: #999;
+}
+
+.buttonBuyContainer {
+  margin-left: auto;
+}
+
+.discountedPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f00;
+  margin-left: 5px;
+}
+
+.buttonContainer {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.cardContent {
+  padding: 10px;
+  background: #e8e8e8;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

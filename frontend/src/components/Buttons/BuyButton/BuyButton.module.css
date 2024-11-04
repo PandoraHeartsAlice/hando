@@ -1,0 +1,45 @@
+/* BuyButton.module.css */
+
+.button {
+  width: 80px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "InterRegular";
+  background-color: #252728; /* Серебристый фон */
+  cursor: pointer;
+  box-shadow: 3px 3px 0 0 #9fa3a5;
+  transition: all 0.3s ease;
+  border: none;
+  color: #f1f7f9; /* Светлый текст */
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px; 
+  height: 30px;
+  background: linear-gradient(to right, #313435, #121213); /* Градиент для эффекта при наведении */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+}
+
+.button:hover {
+  box-shadow: -3px -3px 0 0 #9fa3a5;
+  transform: scale(0.9);
+}
+
+.button:hover::after {
+  opacity: 1;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}

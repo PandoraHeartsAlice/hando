@@ -1,0 +1,58 @@
+/* AboutUs.css */
+.aboutUs {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.aboutUs header, .aboutUs article, .aboutUs section {
+  margin-bottom: 20px;
+}
+
+.aboutUs h1, .aboutUs h2 {
+  color: #202020;
+}
+
+.aboutUs ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutUs li::before {
+  content: '✓';
+  color: #0073e6;
+  margin-right: 8px;
+}
+
+.aboutUs address, .aboutUs time {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+  .aboutUs {
+    padding: 10px;
+  }
+
+  .aboutUs h1 {
+    font-size: 24px;
+  }
+
+  .aboutUs h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutUs h1 {
+    font-size: 20px;
+  }
+
+  .aboutUs h2 {
+    font-size: 18px;
+  }
+}

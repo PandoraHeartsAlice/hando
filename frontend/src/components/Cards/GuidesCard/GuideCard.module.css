@@ -1,0 +1,88 @@
+.guideCard {
+  position: relative;
+  width: 220px;
+  height: 350px;
+  border: 1px solid var(--border-color);
+  background: var(--background-light);
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  transition: transform 0.3s ease;
+  font-family: var(--font-family-main);
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.guideCard:hover {
+  transform: scale(1.05);
+}
+
+.guideName {
+  color: var(--text-color-main);
+  margin: 10px;
+}
+
+.guideCard img {
+  max-width: 100%;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  object-fit: cover;
+}
+
+.guideDetails {
+  padding: 10px;
+  padding-bottom: 4px;
+  background: var(--background-dark);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricingActions {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.originalPrice {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: var(--text-color-secondary);
+  margin-right: 5px;
+}
+
+.discountedPrice {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--price-color);
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.purchaseButtonContainer {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.buttonQuantityContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: -4px 0 0 -4px;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.buttonBuyContainerNoStock {
+  margin-bottom: 8px;
+}
+
+.originalPriceNoStock {
+  font-size: 17px;
+}
