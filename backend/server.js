@@ -15,7 +15,7 @@ const nozzleRoutes = require("./routes/nozzleRoute");
 const filterRoutes = require("./routes/filterRoute");
 const guideRoutes = require("./routes/guideRoute");
 
-// Настройка CORS
+const trusted = true;
 const corsOptions = {
   origin: "http://45.89.188.48",
   methods: ["GET", "POST"],
@@ -23,7 +23,7 @@ const corsOptions = {
   credentials: trusted,
 };
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
